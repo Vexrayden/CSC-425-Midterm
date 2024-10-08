@@ -9,8 +9,8 @@ const LoginPage = () => {
   const [password, setPassword] = useState(''); //takes oassword inputs
 
   const loginattempt = (e) => {
-    e.preventReload(); // Prevent page reload
-    if (username === 'Samuel' && password === 'Pa$$w0rd') {
+    e.preventDefault(); // Prevent page reload
+    if (username == 'Samuel' && password == 'Pa$$w0rd') {
       navigate('/landing'); // Navigate to login page
     } else {
       alert('Invalid credentials, try again.');
@@ -49,7 +49,6 @@ const LoginPage = () => {
 
         <button type="submit">Login</button>
       </form>
-      <button onClick={() => navigate('/quiz')}>Take Qualifier Quiz</button>
     </div>
     );
   };
