@@ -8,10 +8,6 @@ const LoginPage = () => {
   const [username, setUsername] = useState(''); //takes username inputs
   const [password, setPassword] = useState(''); //takes oassword inputs
 
-  const goToLoginPage = () => {
-    navigate('/landing'); // Navigate to the Login page
-  };
-
   const loginattempt = (e) => {
     e.preventReload(); // Prevent page reload
     if (username === 'Samuel' && password === 'Pa$$w0rd') {
